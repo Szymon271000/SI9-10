@@ -1,0 +1,78 @@
+services:
+  algorithms.api:
+    build:
+      context: C:\Users\QVXP36\Desktop\SI9
+      dockerfile: Algorithms.API\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Algorithms.API
+      target: base
+    container_name: Algorithms.API
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
+      /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: algorithmsapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  "C:\app\bin\Debug\net6.0\Algorithms.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\QVXP36\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\QVXP36\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - C:\Users\QVXP36\Desktop\SI9\Algorithms.API:C:\app:rw
+    - C:\Users\QVXP36\onecoremsvsmon\17.1.1414.0:C:\remote_debugger:ro
+    - C:\Users\QVXP36\Desktop\SI9:C:\src:rw
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:c:\.nuget\fallbackpackages:ro
+    - C:\Users\QVXP36\.nuget\packages:c:\.nuget\packages:ro
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3.10-management
+    ports:
+    - published: 5672
+      target: 5672
+    - published: 15672
+      target: 15672
+    volumes:
+    - C:\Users\QVXP36\.docker-conf\rabbitmq\data:/var/lib/rabbitmq/:rw
+    - C:\Users\QVXP36\.docker-conf\rabbitmq\log:/var/log/rabbitmq:rw
+  rabbitmqconsumer:
+    build:
+      context: C:\Users\QVXP36\Desktop\SI9
+      dockerfile: RabbitMQConsumer\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: RabbitMQConsumer
+      target: base
+    container_name: RabbitMQConsumer
+    entrypoint: cmd /c "set DISABLE_PERFORMANCE_DEBUGGER=1 & C:\\remote_debugger\\x64\\msvsmon.exe
+      /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn
+      /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut"
+    environment:
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: rabbitmqconsumer:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  "C:\app\bin\Debug\net6.0\RabbitMQConsumer.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    volumes:
+    - C:\Users\QVXP36\Desktop\SI9\RabbitMQConsumer:C:\app:rw
+    - C:\Users\QVXP36\onecoremsvsmon\17.1.1414.0:C:\remote_debugger:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:c:\.nuget\fallbackpackages:ro
+    - C:\Users\QVXP36\.nuget\packages:c:\.nuget\packages:ro
+version: '3.4'

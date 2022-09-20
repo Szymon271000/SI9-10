@@ -1,0 +1,81 @@
+services:
+  algorithms.api:
+    build:
+      context: C:\Users\QVXP36\Desktop\SI9
+      dockerfile: Algorithms.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Algorithms.API
+      target: base
+    container_name: Algorithms.API
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: algorithmsapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/Algorithms.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      rabbitmq_go_net: {}
+    ports:
+    - target: 80
+    - target: 443
+    tty: true
+    volumes:
+    - C:\Users\QVXP36\Desktop\SI9\Algorithms.API:/app:rw
+    - C:\Users\QVXP36\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\QVXP36\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\QVXP36\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\QVXP36\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\QVXP36\Desktop\SI9:/src:rw
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3.10-management
+    networks:
+      rabbitmq_go_net: {}
+    ports:
+    - published: 5672
+      target: 5672
+    - published: 15672
+      target: 15672
+    volumes:
+    - C:\Users\QVXP36\.docker-conf\rabbitmq\data:/var/lib/rabbitmq/:rw
+    - C:\Users\QVXP36\.docker-conf\rabbitmq\log:/var/log/rabbitmq:rw
+  rabbitmqconsumer:
+    build:
+      context: C:\Users\QVXP36\Desktop\SI9
+      dockerfile: RabbitMQConsumer/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: RabbitMQConsumer
+      target: base
+    container_name: RabbitMQConsumer
+    entrypoint: tail -f /dev/null
+    environment:
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: rabbitmqconsumer:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/RabbitMQConsumer.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      rabbitmq_go_net: {}
+    tty: true
+    volumes:
+    - C:\Users\QVXP36\Desktop\SI9\RabbitMQConsumer:/app:rw
+    - C:\Users\QVXP36\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\QVXP36\.nuget\packages:/root/.nuget/packages:ro
+version: '3.4'

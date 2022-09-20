@@ -1,0 +1,66 @@
+services:
+  algdataapi:
+    build:
+      context: C:\Users\QVXP36\Desktop\SI9
+      dockerfile: AlgDataAPI/Dockerfile
+    container_name: Gateway.API
+    image: algdataapi
+    networks:
+      rabbitmq_go_net: {}
+  algorithms.api:
+    build:
+      context: C:\Users\QVXP36\Desktop\SI9
+      dockerfile: Algorithms.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: algorithmsapi
+    networks:
+      rabbitmq_go_net: {}
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\QVXP36\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\QVXP36\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  apigateway:
+    build:
+      context: C:\Users\QVXP36\Desktop\SI9
+      dockerfile: ApiGateway/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: apigateway
+    networks:
+      rabbitmq_go_net: {}
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\QVXP36\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\QVXP36\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  db:
+    container_name: DataBase
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Your_password123
+    image: mcr.microsoft.com/mssql/server
+    networks:
+      rabbitmq_go_net: {}
+  si9:
+    build:
+      context: C:\Users\QVXP36\Desktop\SI9
+      dockerfile: SI9/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: si9
+    networks:
+      rabbitmq_go_net: {}
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\QVXP36\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\QVXP36\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

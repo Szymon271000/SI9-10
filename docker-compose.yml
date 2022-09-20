@@ -1,0 +1,44 @@
+version: '3.4'
+
+services:
+
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    container_name: DataBase
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+  rabbitmq:
+    image: rabbitmq:3.10-management
+    container_name: 'rabbitmq'
+    ports:
+        - 5672:5672
+        - 15672:15672
+  algorithms.api:
+    image: ${DOCKER_REGISTRY-}algorithmsapi
+    depends_on:
+      - "workerservice"
+    build:
+      context: .
+      dockerfile: Algorithms.API/Dockerfile
+
+  workerservice:
+    image: ${DOCKER_REGISTRY-}workerservice
+    build:
+      context: .
+      dockerfile: WorkerService/Dockerfile
+
+
+  si9:
+    image: ${DOCKER_REGISTRY-}si9
+    build:
+      context: .
+      dockerfile: SI9/Dockerfile
+
+
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+
