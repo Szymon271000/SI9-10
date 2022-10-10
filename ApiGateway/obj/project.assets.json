@@ -797,11 +797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\QVXP36\\Desktop\\SI9\\ApiGateway\\ApiGateway.csproj",
+      "projectUniqueName": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\ApiGateway\\ApiGateway.csproj",
       "projectName": "ApiGateway",
-      "projectPath": "C:\\Users\\QVXP36\\Desktop\\SI9\\ApiGateway\\ApiGateway.csproj",
+      "projectPath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\ApiGateway\\ApiGateway.csproj",
       "packagesPath": "C:\\Users\\QVXP36\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\QVXP36\\Desktop\\SI9\\ApiGateway\\obj\\",
+      "outputPath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\ApiGateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

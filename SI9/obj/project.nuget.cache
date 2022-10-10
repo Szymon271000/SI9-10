@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TLbTtXT09E5xN7Qp0HQBhHrx0WMq2XFUBxatRwNB/oaL9QdZVCZZMVOmpJBX9zloAJSdSvLgsYeeayyU9r2nXg==",
+  "dgSpecHash": "CjMDawh2Wzklt19U/zSbKdZr7NPMXotIy8AIbx5EgG0Hl4JRA5Z+KPhHI/eV35Q28hfu/G0JJfbSO0kzs2QUkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\QVXP36\\Desktop\\SI9\\SI9\\SI9.csproj",
+  "projectFilePath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\SI9\\SI9.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\QVXP36\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

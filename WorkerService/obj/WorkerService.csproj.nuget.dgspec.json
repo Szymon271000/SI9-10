@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\QVXP36\\Desktop\\SI9\\WorkerService\\WorkerService.csproj": {}
+    "C:\\Users\\QVXP36\\Desktop\\SI9-10\\WorkerService\\WorkerService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\QVXP36\\Desktop\\SI9\\WorkerService\\WorkerService.csproj": {
+    "C:\\Users\\QVXP36\\Desktop\\SI9-10\\WorkerService\\WorkerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\QVXP36\\Desktop\\SI9\\WorkerService\\WorkerService.csproj",
+        "projectUniqueName": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\WorkerService\\WorkerService.csproj",
         "projectName": "WorkerService",
-        "projectPath": "C:\\Users\\QVXP36\\Desktop\\SI9\\WorkerService\\WorkerService.csproj",
+        "projectPath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\WorkerService\\WorkerService.csproj",
         "packagesPath": "C:\\Users\\QVXP36\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\QVXP36\\Desktop\\SI9\\WorkerService\\obj\\",
+        "outputPath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\WorkerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

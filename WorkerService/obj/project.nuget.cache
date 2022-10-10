@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b0bs9bTK8R9beaUvr60zKOidBNo8CgNnapEWp3DqawXd+3wN6wNaz03kEZcwQF03wIT3kHfuYgG6U73Mjzb2BA==",
+  "dgSpecHash": "QbTgCWDL4uA9ynf27S2wwUTpDrpTJr+mIwn75NEjUF68OPkN32IqyTjEnVhhCTNLSirdakWqUjekJd5xi4OTsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\QVXP36\\Desktop\\SI9\\WorkerService\\WorkerService.csproj",
+  "projectFilePath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\WorkerService\\WorkerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

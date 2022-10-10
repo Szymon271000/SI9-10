@@ -2585,11 +2585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\QVXP36\\Desktop\\SI9\\SI9\\SI9.csproj",
+      "projectUniqueName": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\SI9\\SI9.csproj",
       "projectName": "SI9",
-      "projectPath": "C:\\Users\\QVXP36\\Desktop\\SI9\\SI9\\SI9.csproj",
+      "projectPath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\SI9\\SI9.csproj",
       "packagesPath": "C:\\Users\\QVXP36\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\QVXP36\\Desktop\\SI9\\SI9\\obj\\",
+      "outputPath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\SI9\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

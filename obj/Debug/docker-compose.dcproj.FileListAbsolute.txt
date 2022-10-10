@@ -71,3 +71,4 @@ C:\Users\QVXP36\Desktop\SI9\bin\Debug\Microsoft.AspNetCore.MiddlewareAnalysis.dl
 C:\Users\QVXP36\Desktop\SI9\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\QVXP36\Desktop\SI9\bin\Debug\Newtonsoft.Json.Bson.dll
 C:\Users\QVXP36\Desktop\SI9\bin\Debug\ApiGateway.pdb
+C:\Users\QVXP36\Desktop\SI9-10\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
