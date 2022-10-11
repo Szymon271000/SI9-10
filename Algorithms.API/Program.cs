@@ -1,14 +1,14 @@
 using Algorithms.API;
-using RabbitMq.API.RabbitMQ;
+//using RabbitMq.API.RabbitMQ;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<IRabbitMQProducer, RabbitMQProducer>();
-builder.Services.AddHostedService<CalculationReceiver>();
+//builder.Services.AddScoped<IRabbitMQProducer, RabbitMQProducer>();
+//builder.Services.AddHostedService<CalculationReceiver>();
 
 builder.Services.AddControllers();
-
+builder.Services.AddHostedService<AlgService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

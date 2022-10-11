@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CjMDawh2Wzklt19U/zSbKdZr7NPMXotIy8AIbx5EgG0Hl4JRA5Z+KPhHI/eV35Q28hfu/G0JJfbSO0kzs2QUkw==",
+  "dgSpecHash": "30DgsSq7rirK8BA/gd4pBfhNP+WLLBxCDuZnEnxg9PyyfabhlhGdHx/SYzBj28O2FEwf7FAC7zHD0LlCo6/P4g==",
   "success": true,
   "projectFilePath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\SI9\\SI9.csproj",
   "expectedPackageFiles": [
@@ -41,7 +41,7 @@
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
+    "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pN/n+7j0OaODKVi26DUjIZga+wU8A4mDf4oFe8+Gp0FsPngI+KHnCt3RCBYVS7mMQNtE9qpdAB1jWz9a+SJ9Rw==",
+  "dgSpecHash": "cTE8M9shsc+R6ut3cGXm0+PgEX6H/RpuPPtgXNrDisY9sw6qRBe7iFBLIr5Mf2VzkICHo3eGaVQAG+RMIeURPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"

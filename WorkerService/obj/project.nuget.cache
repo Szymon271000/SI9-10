@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QbTgCWDL4uA9ynf27S2wwUTpDrpTJr+mIwn75NEjUF68OPkN32IqyTjEnVhhCTNLSirdakWqUjekJd5xi4OTsQ==",
+  "dgSpecHash": "yA1Z/NOsFTCkbJ5n/VBLY4uM9cF5B1VZ8QLt1afpCUdeyfFdx9FzKHaOEaMDocG9MucV5GMMQQZ0p6O0YQlfNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\QVXP36\\Desktop\\SI9-10\\WorkerService\\WorkerService.csproj",
   "expectedPackageFiles": [
@@ -29,7 +29,7 @@
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\6.0.0\\microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
+    "C:\\Users\\QVXP36\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
     "C:\\Users\\QVXP36\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
